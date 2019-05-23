@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Conversion</title>
+</head>
+<body>
+  <script>
+  function NumToObjt (num)
+  {
+    var arrNumber = num.split('');
+    while (arrNumber.length < 3){
+      arrNumber.unshift(0);
+    }
+    var objNumber = {};
+    if (arrNumber.length > 3){
+      console.log ('Введите число от 0 до 999');
+    }
+    else {
+      objNumber['сотни'] = +arrNumber [0];
+      objNumber['десятки'] = +arrNumber [1];
+      objNumber['единицы'] = +arrNumber [2];
+      return objNumber;
+    }
+  }
+  var number = prompt ('Введите число от 0 до 999');
+  var obj = NumToObjt (number);
+  if (obj == NaN){
+    console.log ('Это ноль');
+  }
+  else {
+    console.log (NumToObjt (number));
+  }
+  </script>
+</body>
+</html>

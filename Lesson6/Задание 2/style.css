@@ -1,0 +1,209 @@
+body {
+  background: #F8F8F8;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url(/fonts/Roboto-Blac.ttf);
+}
+.container{
+width: 100%;
+display: flex;
+flex-direction: row;
+}
+.shop{
+  width: 80%;
+}
+ h3 {
+  font-family: Raleway, Arial, sans-serif;
+  color: #717171;
+  font-size: 22px;
+  font-weight: 900;
+  font-style: italic;
+  text-align: center;
+  width: inherit;
+  margin-left: 25px;
+  margin-bottom: 0px;
+  padding: 10px;
+}
+.New_products {
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin-top: 20px;
+}
+.New_products a {
+  text-decoration: none;
+}
+.Top_products,
+.Sale_products {
+  width: inherit;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.Top_products a,
+.Sale_products a {
+  text-decoration: none;
+}
+.product {
+  position: relative;
+  background-color: #ffffff;
+  width: 270px;
+  
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.product:hover {
+  background: linear-gradient(45deg, rgba(200, 0, 31, 0.8), rgba(34, 101, 163, 0.5)), url(img/beach.jpg);
+  background-size: cover;
+}
+.picture_prod {
+  width: 250px;
+  height: 235px;
+  margin-top: 10px;
+}
+.triangle {
+  width: 0px;
+  height: 0px;
+  border-top: 0px solid transparent;
+  border-bottom: 46px solid transparent;
+  border-right: 46px solid #e24602;
+  position: absolute;
+  left: 225px;
+  font-family: Roboto, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 9px;
+  font-weight: 400;
+}
+.triangle:before {
+  content: "NEW";
+  font-size: 7pt;
+  font-family: Roboto;
+  color: #FFF;
+  font-weight: 400;
+  position: absolute;
+  top: 5px;
+  left: 20px;
+}
+.triangle1 {
+  width: 0px;
+  height: 0px;
+  border-top: 0px solid transparent;
+  border-bottom: 46px solid transparent;
+  border-right: 46px solid #faef03;
+  position: absolute;
+  left: 225px;
+  font-family: Roboto, Arial, sans-serif;
+  color: #000000;
+  font-size: 9px;
+  font-weight: 400;
+  text-align: right;
+}
+.triangle1:before {
+  content: "HOT";
+  font-size: 7pt;
+  font-family: Roboto;
+  color: #000;
+  font-weight: 400;
+  position: absolute;
+  top: 5px;
+  left: 20px;
+}
+.Model {
+  font-family: Roboto, Arial, sans-serif;
+  color: #333333;
+  font-size: 13px;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 18.012px;
+  text-align: left;
+  margin: 24px 15px 42px 0px;
+}
+.Cost {
+  font-family: Roboto, Arial, sans-serif;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 900;
+  font-style: italic;
+  text-align: left;
+  margin: 30px 5px 0px 0px;
+}
+.hot {
+  font-family: Roboto, Arial, sans-serif;
+  color: #e24602;
+  font-size: 14px;
+  font-weight: 900;
+  font-style: italic;
+  text-align: left;
+  text-decoration: line-through;
+}
+.box{
+  width: 19%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  border: 1px solid black;
+  height: 100%;
+  background: lightgrey;
+}
+
+.price {
+   
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+}
+.button{
+  border: 1px solid black;
+  background-color: green;
+  color: #FFF;
+  margin-bottom: 20px;
+  width: 50%;
+  text-align: center;
+  padding: 3%;
+}
+.button:hover{
+   background-color: red;
+}
+.box > div {
+ border: 1px solid black;
+ margin: 5%;
+}
+.box > div > span{
+
+ padding: 3%;
+}
